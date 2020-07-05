@@ -1,11 +1,13 @@
 {
   "name": "component-test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "jsnext:main": "build/index.es.js",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "tsc"
+    "build": "rollup -c"
   },
   "devDependencies": {
     "@testing-library/react": "^10.4.3",
